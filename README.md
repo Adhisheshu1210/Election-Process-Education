@@ -220,12 +220,3 @@ This project was built as part of a Google for Developers & Hack2skill Challenge
 
 🔥 Empowering citizens through technology and education.
 
-
----
-
-
-✅ Just copy this into your `README.md` and push:
-
-git add README.md
-git commit -m "Added complete project README"
-git push
