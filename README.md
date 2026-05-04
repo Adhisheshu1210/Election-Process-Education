@@ -5,7 +5,7 @@ An **AI-powered interactive web application** designed to educate users about th
 ---
 
 ## 🚀 Live Demo
-🔗 https://electionprocesseducation-477047840260.asia-south1.run.app  
+🔗 https://election-frontend-477047840260.us-central1.run.app/  
 
 ---
 
