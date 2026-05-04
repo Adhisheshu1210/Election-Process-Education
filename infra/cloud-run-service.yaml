@@ -1,0 +1,20 @@
+# Google Cloud Run service configuration
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: election-backend
+spec:
+  template:
+    spec:
+      containers:
+image: gcr.io/track1cloudrun/election-backend
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: election-frontend
+spec:
+  template:
+    spec:
+      containers:
+image: gcr.io/track1cloudrun/election-frontend

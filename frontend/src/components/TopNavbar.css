@@ -1,0 +1,116 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Brand */
+.topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar__logo {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.topbar__brand h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Profile Button */
+.topbar__profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.topbar__profile-btn:hover {
+  background: #f9fafb;
+}
+
+/* Dropdown */
+.topbar__profile {
+  position: relative;
+}
+
+.topbar__dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 180px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 8px;
+  z-index: 100;
+}
+
+/* Dropdown Items */
+.topbar__dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.topbar__dropdown-item:hover {
+  background: #eef2ff;
+}
+
+/* Logout */
+.topbar__logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.topbar__logout:hover {
+  background: #fecaca;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .topbar__brand h1 {
+    display: none;
+  }
+}

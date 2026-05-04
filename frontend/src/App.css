@@ -1,0 +1,209 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f0f4f9 0%, #e0e7ff 100%);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.civic-container {
+  max-width: 480px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.18);
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.civic-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3a5a;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.civic-navbar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.civic-navbar button {
+  background: #e0e7ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  color: #2d3a5a;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.civic-navbar button:hover {
+  background: #a5b4fc;
+}
+
+.civic-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.civic-form label {
+  font-weight: 500;
+  color: #2d3a5a;
+}
+.civic-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.civic-form input:focus {
+  border: 1.5px solid #6366f1;
+}
+.civic-form button {
+  background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+.civic-form button:hover {
+  background: linear-gradient(90deg, #4338ca 0%, #2563eb 100%);
+}
+
+.civic-error {
+  color: #ef4444;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.civic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  background: #f8fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.civic-table th, .civic-table td {
+  padding: 12px 16px;
+  text-align: left;
+}
+.civic-table th {
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+}
+.civic-table tr:nth-child(even) {
+  background: #e0e7ff;
+}
+
+.civic-quiz {
+  width: 100%;
+  margin: 0 auto;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+}
+.civic-quiz-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3a5a;
+  margin-bottom: 12px;
+}
+.civic-quiz-options button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #e0e7ff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #2d3a5a;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.civic-quiz-options button:hover {
+  background: #a5b4fc;
+}
+.civic-quiz-explanation {
+  color: #2563eb;
+  font-size: 0.98rem;
+  margin-top: 6px;
+}
+.civic-score {
+  font-weight: 700;
+  color: #6366f1;
+  margin-top: 12px;
+}
+
+.civic-chat {
+  width: 100%;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+  margin-bottom: 18px;
+}
+.civic-chat-message {
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #e0e7ff;
+  color: #2d3a5a;
+  font-size: 1rem;
+}
+.civic-chat-message.user {
+  background: #6366f1;
+  color: #fff;
+  text-align: right;
+}
+.civic-chat-message.assistant {
+  background: #e0e7ff;
+  color: #2d3a5a;
+  text-align: left;
+}
+.civic-chat-input {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.civic-chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  font-size: 1rem;
+}
+.civic-chat-input button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.civic-chat-input button:hover {
+  background: #4338ca;
+}

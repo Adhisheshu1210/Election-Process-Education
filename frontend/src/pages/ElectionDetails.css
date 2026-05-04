@@ -1,0 +1,206 @@
+/* =========================
+   MAIN WRAPPER
+========================= */
+.election-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  color: #0f172a;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* =========================
+   HEADER
+========================= */
+.election-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.election-header h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8, #4f46e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 12px;
+}
+
+.election-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+.election-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   CARD
+========================= */
+.election-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.election-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   ICON
+========================= */
+.election-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.election-card:hover .election-icon {
+  transform: scale(1.1);
+}
+
+/* gradient variations */
+.icon-blue {
+  background: linear-gradient(135deg, #3b82f6, #4f46e5);
+}
+
+.icon-green {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.icon-purple {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.icon-orange {
+  background: linear-gradient(135deg, #f97316, #ef4444);
+}
+
+.icon-yellow {
+  background: linear-gradient(135deg, #f59e0b, #eab308);
+}
+
+/* =========================
+   TITLE
+========================= */
+.election-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #0f172a;
+  transition: color 0.3s ease;
+}
+
+.election-card:hover .election-title {
+  color: #2563eb;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+.election-desc {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  white-space: pre-line; /* important for \n formatting */
+  text-align: center;
+}
+
+/* =========================
+   STATS
+========================= */
+.election-stats {
+  text-align: center;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1d4ed8;
+}
+
+/* =========================
+   BUTTON SECTION
+========================= */
+.election-footer {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.election-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 36px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.election-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(37, 99, 235, 0.4);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+  .election-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .election-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .election-header h1 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,243 @@
+/* Quiz Card Selector Styling */
+
+.quiz-card-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+.quiz-card-header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-card-header h2 {
+  color: #333;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.quiz-card-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Quiz Modes Grid */
+.quiz-modes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Mode Card */
+.quiz-mode-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 5px solid;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-mode-card.practice {
+  border-top-color: #4CAF50;
+}
+
+.quiz-mode-card.exam {
+  border-top-color: #667eea;
+}
+
+.quiz-mode-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Mode Icon */
+.mode-icon {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Mode Title */
+.quiz-mode-card h3 {
+  color: #333;
+  font-size: 22px;
+  margin: 15px 0 10px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Mode Description */
+.quiz-mode-card p {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  line-height: 1.5;
+}
+
+/* Mode Features */
+.mode-features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.mode-features li {
+  color: #555;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 500;
+}
+
+.mode-features li:last-child {
+  border-bottom: none;
+}
+
+/* Mode Button */
+.mode-btn {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+}
+
+.practice-btn {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+}
+
+.practice-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.exam-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.exam-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Info Section */
+.quiz-info {
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 4px solid #667eea;
+}
+
+.quiz-info h4 {
+  color: #333;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+/* Topics Grid */
+.quiz-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quiz-card-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .quiz-card-header h2 {
+    font-size: 24px;
+  }
+
+  .quiz-modes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .quiz-mode-card {
+    padding: 20px;
+  }
+
+  .mode-icon {
+    font-size: 50px;
+  }
+
+  .quiz-mode-card h3 {
+    font-size: 18px;
+  }
+
+  .mode-btn {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .quiz-info {
+    padding: 15px;
+  }
+
+  .quiz-info h4 {
+    font-size: 16px;
+  }
+
+  .topic-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
